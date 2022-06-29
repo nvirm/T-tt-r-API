@@ -36,7 +36,7 @@ namespace JaateloautoAPI.Helpers
             if (VRoutes.Maintenance == false)
             {
                 var jHelper = new JaateloHelper();
-                var parse = Task.Run(async () => await jHelper.parseVehiclesToRoutes(40)).Result;
+                var parse = Task.Run(async () => await jHelper.parseVehiclesToRoutes(60)).Result;
             }
         }
 
