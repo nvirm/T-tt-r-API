@@ -13,6 +13,7 @@ https://www.icloud.com/shortcuts/445a02dfd2334ec3bd7c0dac32d54476 (Get nearest s
 - Current Vehicle locations are updated periodically (every 60 seconds) (UpdateLocationsService).
 - *Not sure of working status:* Daily data is currently reset once every day between 10:00 and 11:00 (UpdateRoutesService).
 - Use Swagger to test, or Postman etc. Swagger is configured to run even in production. (Postman reference in this Repo)
+- Search project for GAPPS (Google API key), and insert your own key. Used only for Zip Code determination in cases it is not supplied.
 
 # General ideas for improvements
 - Put a database in place, so data doesn't have to be resetted every day.
