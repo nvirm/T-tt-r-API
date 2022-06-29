@@ -3,7 +3,7 @@
 Scrapes API presented in website https://asiakasnakyma.jatskiauto.com/, and tries to bind Vehicles to routes, parses Schedules to machine readable format.
 Idea was to create iOS Siri Shortcut for schedules (and to get an answer if the vehicle is stopping near you today!).
 
-# iOS shortcut links (For reference)
+# iOS Siri Shortcut links (For reference)
 
 https://www.icloud.com/shortcuts/71c3a00e7684426aa32ad48c1a95a8ed (Get stop near me that is active today)
 
@@ -36,6 +36,7 @@ https://www.icloud.com/shortcuts/445a02dfd2334ec3bd7c0dac32d54476 (Get nearest s
 
 https://stackoverflow.com/questions/57523899/keep-asp-net-core-app-running-all-the-time-in-iis
 https://docs.hangfire.io/en/latest/deployment-to-production/making-aspnet-app-always-running.html
+https://www.nickedeye.com/iis-keep-website-alive-always-running/
 
 # Tech side
 - .NET 6.0
