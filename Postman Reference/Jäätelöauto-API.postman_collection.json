@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "eb9d6b78-7599-4e05-8c01-c662048043f5",
+		"name": "Jäätelöauto-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Orig API",
+			"item": [
+				{
+					"name": "GET All Routes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/route/?data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"route",
+								""
+							],
+							"query": [
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Route + Schedules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/route/search/?routes=route_583.json,route_614.json&data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"route",
+								"search",
+								""
+							],
+							"query": [
+								{
+									"key": "routes",
+									"value": "route_583.json,route_614.json"
+								},
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Truck Route History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/device/862117026731132/route/?hours=1&data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"device",
+								"862117026731132",
+								"route",
+								""
+							],
+							"query": [
+								{
+									"key": "hours",
+									"value": "1"
+								},
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Single Truck Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/device/862117026731132/?&data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"device",
+								"862117026731132",
+								""
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Truck locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/device/?data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"device",
+								""
+							],
+							"query": [
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Today Stops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.paikannuspalvelu.fi/v1/public/route/today/stop/?data_key=eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf&author=rest@paikannuspalvelu.fi&format=geojson",
+							"protocol": "https",
+							"host": [
+								"api",
+								"paikannuspalvelu",
+								"fi"
+							],
+							"path": [
+								"v1",
+								"public",
+								"route",
+								"today",
+								"stop",
+								""
+							],
+							"query": [
+								{
+									"key": "data_key",
+									"value": "eVCPeXjwNNYMfGZ6sGwzLcFB462FTfgJ5TqAX7nf"
+								},
+								{
+									"key": "author",
+									"value": "rest@paikannuspalvelu.fi"
+								},
+								{
+									"key": "format",
+									"value": "geojson"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PDF Timetable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.jatskiauto.com/haku/hae?zip=01280",
+							"protocol": "https",
+							"host": [
+								"www",
+								"jatskiauto",
+								"com"
+							],
+							"path": [
+								"haku",
+								"hae"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "01280"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom handling API",
+			"item": [
+				{
+					"name": "GET Nearest Stop Today",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44322/NearestStopToday?Lat=60.33475299307512&Long=25.02520864290282&Range=5000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44322",
+							"path": [
+								"NearestStopToday"
+							],
+							"query": [
+								{
+									"key": "Lat",
+									"value": "60.33475299307512"
+								},
+								{
+									"key": "Long",
+									"value": "25.02520864290282"
+								},
+								{
+									"key": "Range",
+									"value": "5000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Nearest Stop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44322/NearestStop?Lat=60.33475299307512&Long=25.02520864290282&Range=5000",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44322",
+							"path": [
+								"NearestStop"
+							],
+							"query": [
+								{
+									"key": "Lat",
+									"value": "60.33475299307512"
+								},
+								{
+									"key": "Long",
+									"value": "25.02520864290282"
+								},
+								{
+									"key": "Range",
+									"value": "5000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Current VehicleRoutes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44322/Jaateloauto?Mode=Routes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44322",
+							"path": [
+								"Jaateloauto"
+							],
+							"query": [
+								{
+									"key": "Mode",
+									"value": "Routes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Current VehicleInfos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44322/Jaateloauto?Mode=Vehicles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44322",
+							"path": [
+								"Jaateloauto"
+							],
+							"query": [
+								{
+									"key": "Mode",
+									"value": "Vehicles"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Current Stops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44322/Jaateloauto?Mode=Stops",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44322",
+							"path": [
+								"Jaateloauto"
+							],
+							"query": [
+								{
+									"key": "Mode",
+									"value": "Stops"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
